@@ -1,0 +1,45 @@
+:root {
+	/* Layout Colors */
+	--bg-app: #F8F9FA;
+	/* Soft cream/off-white main background */
+	--bg-card: #FFFFFF;
+	/* Crisp white for elevated data cards */
+	--bg-sidebar: #1E2229;
+	/* Deep slate/soft black to anchor navigation */
+
+	/* Accent Pastel Colors */
+	--accent-mint: #4EAD8A;
+	/* Muted Mint Green for positive balances ("You are owed") */
+	--accent-coral: #E57373;
+	/* Soft Coral Red for negative balances ("You owe") */
+	--accent-pastel-blue: #E3F2FD;
+	/* Soft tint blue for charts/highlights */
+	--accent-violet: #BBDEFB;
+	/* Secondary muted accent color */
+
+	/* Text & Borders */
+	--text-main: #2D3142;
+	/* Charcoal for premium high-contrast readability */
+	--text-muted: #9094A6;
+	/* Muted gray for timestamps and secondary metrics */
+	--text-light: #FFFFFF;
+	/* White text for sidebar elements */
+	--border-color: #EAEAEA;
+	/* Micro-thin divider lines */
+
+	/* UI Styling Tokens */
+	--radius-lg: 16px;
+	/* Pronounced rounding for layout cards */
+	--radius-md: 10px;
+	/* Medium rounding for buttons/inputs */
+	--shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.04);
+	/* Ultra-soft layout elevation */
+	--transition-smooth: all 0.2s ease-in-out;
+}
+
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+	background-color: var(--bg-app);
+	color: var(--text-main);
+	-webkit-font-smoothing: antialiased; }

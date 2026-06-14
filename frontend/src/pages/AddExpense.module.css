@@ -1,0 +1,130 @@
+.container {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.header {
+	margin-bottom: 2rem;
+}
+
+.header h1 {
+	margin: 0 0 0.5rem 0;
+	font-size: 1.8rem;
+}
+
+.card {
+	background: var(--bg-card);
+	padding: 2rem;
+	border-radius: var(--radius-lg);
+	box-shadow: var(--shadow-sm);
+}
+
+.inputGroup {
+	margin-bottom: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.label {
+	font-size: 0.9rem;
+	font-weight: 600;
+	color: var(--text-muted);
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+.input {
+	padding: 0.875rem 1rem;
+	border: 1px solid var(--border-color);
+	border-radius: var(--radius-md);
+	font-size: 1rem;
+	color: var(--text-main);
+	background: var(--bg-app);
+	transition: var(--transition-smooth);
+}
+
+.input:focus {
+	outline: none;
+	border-color: var(--accent-mint);
+	box-shadow: 0 0 0 3px rgba(78, 173, 138, 0.1);
+}
+
+/* Segmented Control for Split Types */
+.splitTypes {
+	display: flex;
+	background: var(--bg-app);
+	padding: 0.25rem;
+	border-radius: var(--radius-md);
+	margin-bottom: 2rem;
+}
+
+.typeBtn {
+	flex: 1;
+	padding: 0.75rem;
+	border: none;
+	background: transparent;
+	font-weight: 600;
+	color: var(--text-muted);
+	border-radius: 8px;
+	cursor: pointer;
+	transition: var(--transition-smooth);
+}
+
+.typeBtn.active {
+	background: var(--bg-card);
+	color: var(--text-main);
+	box-shadow: var(--shadow-sm);
+}
+
+/* Participant List for Splitting */
+.participantRow {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem 0;
+	border-bottom: 1px solid var(--border-color);
+}
+
+.participantRow:last-child {
+	border-bottom: none;
+}
+
+.participantInfo {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	font-weight: 500;
+}
+
+.splitInputWrapper {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.smallInput {
+	width: 80px;
+	padding: 0.5rem;
+	text-align: right;
+	border: 1px solid var(--border-color);
+	border-radius: var(--radius-md);
+	font-size: 1rem;
+}
+
+.submitBtn {
+	width: 100%;
+	padding: 1rem;
+	margin-top: 1.5rem;
+	background: var(--accent-mint);
+	color: white;
+	border: none;
+	border-radius: var(--radius-md);
+	font-size: 1rem;
+	font-weight: 700;
+	cursor: pointer;
+	transition: var(--transition-smooth);
+}
+
+.submitBtn:hover {
+	filter: brightness(0.95); }

@@ -1,0 +1,92 @@
+.wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	background-color: var(--bg-sidebar);
+	/* Dark background to make the card pop */
+}
+
+.authCard {
+	background: var(--bg-card);
+	padding: 3rem 2.5rem;
+	border-radius: var(--radius-lg);
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+	width: 100%;
+	max-width: 400px;
+	text-align: center;
+}
+
+.logo {
+	font-size: 1.8rem;
+	font-weight: 800;
+	color: var(--text-main);
+	margin-bottom: 0.5rem;
+	letter-spacing: -0.5px;
+}
+
+.subtitle {
+	color: var(--text-muted);
+	font-size: 0.95rem;
+	margin-bottom: 2rem;
+}
+
+.formGroup {
+	margin-bottom: 1.5rem;
+	text-align: left;
+}
+
+.label {
+	display: block;
+	font-size: 0.85rem;
+	font-weight: 600;
+	color: var(--text-muted);
+	margin-bottom: 0.5rem;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+.input {
+	width: 100%;
+	padding: 0.85rem 1rem;
+	border: 1px solid var(--border-color);
+	border-radius: var(--radius-md);
+	font-size: 1rem;
+	color: var(--text-main);
+	background: var(--bg-app);
+	transition: var(--transition-smooth);
+	box-sizing: border-box;
+}
+
+.input:focus {
+	outline: none;
+	border-color: var(--accent-mint);
+	box-shadow: 0 0 0 3px rgba(78, 173, 138, 0.1);
+}
+
+.errorText {
+	color: var(--accent-coral);
+	font-size: 0.85rem;
+	font-weight: 600;
+	margin-bottom: 1.5rem;
+	background: rgba(229, 115, 115, 0.1);
+	padding: 0.75rem;
+	border-radius: var(--radius-md);
+}
+
+.loginBtn {
+	width: 100%;
+	padding: 1rem;
+	background: var(--text-main);
+	color: white;
+	border: none;
+	border-radius: var(--radius-md);
+	font-size: 1rem;
+	font-weight: 700;
+	cursor: pointer;
+	transition: var(--transition-smooth);
+}
+
+.loginBtn:hover {
+	background: var(--accent-mint);
+	/* Transitions to the positive accent color on hover */ }

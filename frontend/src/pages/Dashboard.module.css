@@ -1,0 +1,99 @@
+.header {
+	margin-bottom: 2rem;
+}
+
+.header h1 {
+	margin: 0 0 0.5rem 0;
+	font-size: 1.8rem;
+}
+
+.header p {
+	margin: 0;
+	color: var(--text-muted);
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1.5rem;
+	margin-bottom: 2rem;
+}
+
+.card {
+	background: var(--bg-card);
+	padding: 1.5rem;
+	border-radius: var(--radius-lg);
+	box-shadow: var(--shadow-sm);
+}
+
+.cardTitle {
+	font-size: 0.9rem;
+	color: var(--text-muted);
+	margin-bottom: 1rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+.balanceAmount {
+	font-size: 2.2rem;
+	font-weight: 700;
+	margin: 0;
+}
+
+.positive {
+	color: var(--accent-mint);
+}
+
+.negative {
+	color: var(--accent-coral);
+}
+
+/* Pure CSS Doughnut Chart */
+.chartWrapper {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+}
+
+.doughnut {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	/* Using conic-gradient to split the chart visually */
+	background: conic-gradient(var(--accent-mint) 0% 65%,
+			var(--accent-coral) 65% 100%);
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* The inner circle that creates the 'doughnut' hole */
+.doughnut::after {
+	content: "";
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	background-color: var(--bg-card);
+	border-radius: 50%;
+}
+
+.chartLegend {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+}
+
+.legendItem {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	font-size: 0.9rem;
+	color: var(--text-muted);
+}
+
+.dot {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%; }
