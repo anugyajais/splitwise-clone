@@ -1,5 +1,6 @@
 // src/utils/api.js
-const BASE_URL = 'http://127.0.0.1:8000/api';
+// const BASE_URL = 'http://127.0.0.1:8000/api';
+const BASE_URL = 'https://splitwise-clone-8y2j.onrender.com/api'; 
 
 export const apiCall = async (endpoint, method = 'GET', body = null) => {
   // Grab the JWT token if we have one saved
